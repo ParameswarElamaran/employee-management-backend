@@ -1,8 +1,7 @@
 services:
-
-type: web
-name: employee-management-backend
-env: java
-plan: free
-buildCommand: "./mvnw clean package -DskipTests"
-startCommand: "java -jar target/*.jar"
+  - type: web
+    name: employee-management-backend
+    env: java
+    plan: free
+    buildCommand: "./mvnw clean package -DskipTests"
+    startCommand: "java -jar target/*.jar"
