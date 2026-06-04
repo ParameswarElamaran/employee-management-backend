@@ -16,7 +16,10 @@ import java.util.List;
 
 @RestController
 @CrossOrigin(
-    origins = "http://localhost:3000",
+    origins = {
+        "http://localhost:3000",
+        "https://employee-management-frontend-rho-flame.vercel.app"
+    },
     methods = {
         org.springframework.web.bind.annotation.RequestMethod.GET,
         org.springframework.web.bind.annotation.RequestMethod.POST,
