@@ -61,4 +61,14 @@ public Employee updateEmployee(
 
     return employeeRepository.save(employee);
 }
+@PutMapping("/api/employees/{id}/like")
+public Employee likeEmployee(@PathVariable Long id) {
+
+    Employee employee = employeeRepository.findById(id)
+            .orElseThrow();
+
+    employee.setLikes(employee.getLikes() + 1);
+
+    return employeeRepository.save(employee);
+}
 }

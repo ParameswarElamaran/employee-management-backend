@@ -11,6 +11,8 @@ public class Employee {
 
     private String name;
     private String role;
+    private int likes;
+
 
     public Employee() {
     }
@@ -39,4 +41,11 @@ public class Employee {
     public void setRole(String role) {
         this.role = role;
     }
+    public int getLikes() {
+    return likes;
+}
+
+public void setLikes(int likes) {
+    this.likes = likes;
+}
 }
