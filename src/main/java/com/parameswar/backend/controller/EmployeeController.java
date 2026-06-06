@@ -18,7 +18,7 @@ import java.util.List;
 @CrossOrigin(
     origins = {
         "http://localhost:3000",
-        "https://employee-management-frontend-rho-flame.vercel.app"
+        "https://employee-management-frontend.parameswarbe2099.workers.dev"
     },
     methods = {
         org.springframework.web.bind.annotation.RequestMethod.GET,
